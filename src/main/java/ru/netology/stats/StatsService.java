@@ -1,7 +1,7 @@
 package ru.netology.stats;
 
 public class StatsService {
-    public static int calculateSumAndMidelSum(int[] salesInfos) {
+    public static int calculateSumAndMid(int[] salesInfos) {
         int sum = 0;
         for (int salesInfo : salesInfos) {
             sum += salesInfo;
@@ -9,20 +9,30 @@ public class StatsService {
         return sum;
     }
 
-    public static int calculatelowMonth(int[] salesInfos, int midelsum) {
+    public static int calculateLowMonth(int[] salesInfos) {
+        int sum = 0;
+        for (int salesInfo : salesInfos) {
+            sum += salesInfo;
+        }
+        int mid = sum / 12;
         int lowMonth = 0;
         for (int salesInfo : salesInfos) {
-            if (salesInfo < midelsum) {
+            if (salesInfo < mid) {
                 lowMonth += 1;
             }
         }
         return lowMonth;
     }
 
-    public static int calculatehighMonth(int[] salesInfos, int midelsum) {
+    public static int calculateHighMonth(int[] salesInfos) {
+        int sum = 0;
+        for (int salesInfo : salesInfos) {
+            sum += salesInfo;
+        }
+        int mid = sum / 12;
         int highMonth = 0;
         for (int salesInfo : salesInfos) {
-            if (salesInfo > midelsum) {
+            if (salesInfo > mid) {
                 highMonth += 1;
             }
         }
@@ -56,6 +66,8 @@ public class StatsService {
         return lowPayment + 1; //Прибавляем 1 т.к. #месяца начинается с 1го, а массив с 0.
     }
 }
+
+
 
 
 

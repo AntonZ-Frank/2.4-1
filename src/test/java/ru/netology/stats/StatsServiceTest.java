@@ -3,58 +3,47 @@ package ru.netology.stats;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.Test;
+
 class StatsServiceTest {
-    @org.junit.jupiter.api.Test
+    @Test
     void calculateSumAndMidelSum() {
         StatsService calcService = new StatsService();
         int[] salesInfos = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int sum = calcService.calculateSumAndMidelSum(salesInfos);
-        int actual = sum;
-        int expected = 180;
-        assertEquals(expected, actual);
-        //System.out.println("Сумма всех продаж (по тесту верно): "+ sum);
+        int sum = calcService.calculateSumAndMid(salesInfos);
+        assertEquals(180, sum);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculatelowMonth() {
         StatsService calcService = new StatsService();
         int[] salesInfos = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int midelsum = 15;
-        int lowMonth = calcService.calculatelowMonth(salesInfos, midelsum);
-        int actual = lowMonth;
-        int expected = 5;
-        assertEquals(expected, actual);
+        int lowMonth = calcService.calculateLowMonth(salesInfos);
+        assertEquals(5, lowMonth);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculatehighMonth() {
         StatsService calcService = new StatsService();
         int[] salesInfos = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int midelsum = 15;
-        int highMonth = calcService.calculatehighMonth(salesInfos, midelsum);
-        int actual = highMonth;
-        int expected = 5;
-        assertEquals(expected, actual);
+        int highMonth = calcService.calculateHighMonth(salesInfos);
+        assertEquals(5, highMonth);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculateHowHighPayment() {
         StatsService calcService = new StatsService();
         int[] salesInfos = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int highPayment = calcService.calculateHowHighPayment(salesInfos);
-        int actual = highPayment;
-        int expected = 8;
-        assertEquals(expected, actual);
+        assertEquals(8, highPayment);
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculateHowLowPayment() {
         StatsService calcService = new StatsService();
         int[] salesInfos = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
         int lowPayment = calcService.calculateHowLowPayment(salesInfos);
-        int actual = lowPayment;
-        int expected = 9;
-        assertEquals(expected, actual);
+        assertEquals(9, lowPayment);
     }
 }
 

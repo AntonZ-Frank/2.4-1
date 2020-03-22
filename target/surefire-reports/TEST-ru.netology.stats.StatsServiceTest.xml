@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.stats.StatsServiceTest" time="0.039" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="ru.netology.stats.StatsServiceTest" time="0.024" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="RU"/>
     <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.3.1\jbr\bin"/>
-    <property name="sun.java.command" value="C:\Users\F85F~1\AppData\Local\Temp\surefire7840890062550496937\surefirebooter8434262176002213993.jar C:\Users\АНТОН\AppData\Local\Temp\surefire7840890062550496937 2020-03-19T12-50-54_567-jvmRun1 surefire16934053190191847883tmp surefire_018035166012976955213tmp"/>
+    <property name="sun.java.command" value="C:\Users\F85F~1\AppData\Local\Temp\surefire8974958898403365984\surefirebooter15319084603929637034.jar C:\Users\АНТОН\AppData\Local\Temp\surefire8974958898403365984 2020-03-22T16-15-07_529-jvmRun1 surefire8308752103081140958tmp surefire_09425140242181410342tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\АНТОН\IdeaProjects\2.4-1\target\test-classes;C:\Users\АНТОН\IdeaProjects\2.4-1\target\classes;C:\Users\АНТОН\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.0\junit-jupiter-5.6.0.jar;C:\Users\АНТОН\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\АНТОН\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\АНТОН\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\АНТОН\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\АНТОН\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\АНТОН\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\АНТОН\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;C:\Users\АНТОН\.m2\repository\org\jetbrains\annotations\19.0.0\annotations-19.0.0.jar;C:\Users\АНТОН\.m2\repository\net\sf\opencsv\opencsv\2.3\opencsv-2.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\F85F~1\AppData\Local\Temp\surefire7840890062550496937\surefirebooter8434262176002213993.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\F85F~1\AppData\Local\Temp\surefire8974958898403365984\surefirebooter15319084603929637034.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.5+10-b520.17"/>
@@ -60,9 +60,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="calculateSumAndMidelSum" classname="ru.netology.stats.StatsServiceTest" time="0.025"/>
+  <testcase name="calculateSumAndMidelSum" classname="ru.netology.stats.StatsServiceTest" time="0.004"/>
   <testcase name="calculatehighMonth" classname="ru.netology.stats.StatsServiceTest" time="0"/>
-  <testcase name="calculateHowLowPayment" classname="ru.netology.stats.StatsServiceTest" time="0.001"/>
-  <testcase name="calculatelowMonth" classname="ru.netology.stats.StatsServiceTest" time="0"/>
-  <testcase name="calculateHowHighPayment" classname="ru.netology.stats.StatsServiceTest" time="0.001"/>
+  <testcase name="calculateHowLowPayment" classname="ru.netology.stats.StatsServiceTest" time="0"/>
+  <testcase name="calculatelowMonth" classname="ru.netology.stats.StatsServiceTest" time="0.003"/>
+  <testcase name="calculateHowHighPayment" classname="ru.netology.stats.StatsServiceTest" time="0"/>
 </testsuite>
